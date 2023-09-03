@@ -5,6 +5,13 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono', sans-serif;
+  font-size: 16px;
+}
+#app-container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 header,
 footer {
@@ -15,7 +22,7 @@ footer {
   font-size: 12px;
   margin: 20px 0 0;
   background-color: #c11212;
-  color: #ccba6d;
+  color: #f4d942;
   height: 2rem;
   line-height: 2rem;
 }
@@ -49,7 +56,7 @@ main {
 .vps-logo-text {
   vertical-align: bottom;
   font-weight: bold;
-  color: #ccba6d;
+  color: #f4d942;
   font-size: 20px;
 }
 .menu-container {
@@ -66,9 +73,13 @@ main {
   list-style-type: none;
 }
 .menu-list a {
-  color: #ccba6d;
+  /* color: #ccba6d; another option for yellow*/
+  color: #f4d942;
   margin-right: 36px;
   text-decoration: none;
+}
+.mobile-menu #mobile-menu-links {
+  display: none;
 }
 .jumbotron-container {
   text-align: center;
@@ -78,4 +89,26 @@ main {
   width: 700px;
   height: 500px;
   vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .vps-logo-text {
+    font-size: 16px;
+    display: none;
+  }
+  /* .menu-container {
+    display: none;
+  } */
+  .vps-jumbotrom-image {
+    width: 20rem;
+    height: 16rem;
+    vertical-align: middle;
+  }
+  .menu-list a {
+    margin-right: 30px;
+    font-size: 14px;
+  }
 }

@@ -6,10 +6,14 @@
     <title>Vastu Perfect Solutions</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico" />
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div>
-      <div>
+    <div id="app-container">
+      <div class="header-container">
         <header class="site-header">
           <div class="vps-logo-container">
             <a class="logo">
@@ -28,7 +32,21 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
+          <!-- <div class="mobile-menu-container">
+            <div class="mobile-menu">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div id="mobile-menu-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div> -->
         </header>
+      </div>
+      <div class="main-container">
         <main>
           <div class="jumbotron-container">
             <img
@@ -77,8 +95,9 @@
             </p>
           </div>
         </main>
-        <footer><p>© Copyright 2023 Vastu Perfect Solutions</p></footer>
       </div>
+      <footer><p>© Copyright 2023 Vastu Perfect Solutions</p></footer>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
